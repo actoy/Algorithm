@@ -1,21 +1,21 @@
-package com.my.sort;
+package com.sort;
 
 /**
- *  * 实例BubbleSort
+ *  * 实例InsertSort
  *  *
  *  * @version 1.0
  *  
  */
-public class BubbleSort extends Sort {
+public class InsertSort extends Sort {
 
-    public static void bubbleSort(int[] arr) {
+    public static void insertSort(int[] arr) {
         if(arr == null || arr.length < 1) {
             return;
         }
-        for (int i = arr.length - 1; i >= 0; i--) {
-            for (int j = 0; j < i; j++) {
-                if (arr[i] < arr[j]) {
-                    swap(arr, i, j);
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i - 1; j >= 0; j--) {
+                if (arr[j] > arr[j + 1]) {
+                    swap(arr, j, j + 1);
                 }
             }
         }
@@ -25,7 +25,7 @@ public class BubbleSort extends Sort {
         int maxSize = 100;
         int maxValue = 100;
         int[] arr = generateRandomArray(maxSize, maxValue);
-        bubbleSort(arr);
+        insertSort(arr);
         printArray(arr);
     }
 

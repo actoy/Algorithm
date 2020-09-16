@@ -1,4 +1,4 @@
-package com.my.sort;
+package com.sort;
 
 /**
  *  * 实例sort
