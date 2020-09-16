@@ -8,14 +8,11 @@ package com.my.leetcode;
  */
 public class LeetCode7 {
     public static void main(String[] args) {
-        Solution7 solution = new Solution7();
         int x = 1534236469;
-        System.out.println(solution.reverse(x));
+        System.out.println(reverse(x));
     }
-}
 
-class Solution7 {
-    public int reverse(int x) {
+    public static int reverse(int x) {
         int negative;
         negative = x < 0 ? -1 : 1;
         x *= negative;
@@ -30,4 +27,5 @@ class Solution7 {
         }
         return negative * (int)result;
     }
+
 }

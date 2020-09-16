@@ -12,13 +12,10 @@ public class LeetCode1 {
     public static void main(String[] arags) {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
-        Solution1 solution = new Solution1();
-        System.out.println( solution.twoSum(nums, target) );
+        System.out.println( twoSum(nums, target) );
     }
-}
 
-class Solution1 {
-    public int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap <>();
         for (int i = 0; i < nums.length; ++i) {
             int diff = target - nums[i];

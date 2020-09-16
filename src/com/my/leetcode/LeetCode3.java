@@ -10,14 +10,11 @@ import java.util.HashMap;
  */
 public class LeetCode3 {
     public static void main(String[] arags) {
-        Solution3 solution = new Solution3();
         String s = "dvdf";
-        System.out.println( solution.lengthOfLongestSubstring(s) );
+        System.out.println( lengthOfLongestSubstring(s) );
     }
-}
 
-class Solution3 {
-    public int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) {
             return 0;
         }
@@ -33,4 +30,5 @@ class Solution3 {
         }
         return max;
     }
+
 }

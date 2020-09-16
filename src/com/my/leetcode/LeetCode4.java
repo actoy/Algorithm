@@ -8,15 +8,12 @@ package com.my.leetcode;
  */
 public class LeetCode4 {
     public static void main(String[] args) {
-        Solution4 solution = new Solution4();
         int[] num1 = {1, 2};
         int[] num2 = {3, 4};
-        System.out.println( solution.findMedianSortedArrays(num1, num2) );
+        System.out.println( findMedianSortedArrays(num1, num2) );
     }
-}
 
-class Solution4 {
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int length1 = nums1.length;
         int length2 = nums2.length;
         int mid = (length1 + length2 + 1) / 2;
@@ -28,7 +25,7 @@ class Solution4 {
         }
     }
 
-    private int getKthNumber(int[] nums1, int start1, int end1, int[] nums2, int start2, int end2, int k) {
+    private static int getKthNumber(int[] nums1, int start1, int end1, int[] nums2, int start2, int end2, int k) {
         int length1 = end1 - start1 + 1;
         int length2 = end2 - start2 + 1;
         //让 len1 的长度小于 len2，这样就能保证如果有数组空了，一定是 len1
@@ -48,4 +45,5 @@ class Solution4 {
         }
         return getKthNumber(nums1, i + 1, end1, nums2, start2, end2, k - (i - start1 + 1));
     }
+
 }

@@ -8,14 +8,12 @@ package com.my.leetcode;
  */
 public class LeetCode5 {
     public static void main(String[] args) {
-        Solution5 solution = new Solution5();
         String s = "babad";
-        System.out.println( solution.longestPalindrome(s) );
+        System.out.println( longestPalindrome(s) );
     }
-}
 
-class Solution5 {
-    public String longestPalindrome(String s) {
+    public static String longestPalindrome(String s) {
         return "";
     }
+
 }
