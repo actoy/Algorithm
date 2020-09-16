@@ -8,7 +8,6 @@ package com.my.leetcode;
  */
 
 public class LeetCode2 {
-
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (l1 == null) {
             return l2;
