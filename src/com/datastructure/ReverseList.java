@@ -1,5 +1,8 @@
 package com.datastructure;
 
+/**
+ * 链表的反转
+ */
 public class ReverseList {
     public static class Node {
         public int value;

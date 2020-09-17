@@ -1,5 +1,8 @@
 package com.datastructure;
 
+/**
+ * 单链表删除一个给定的value
+ */
 public class DeleteGivenValue {
     public static class Node {
         public int value;
