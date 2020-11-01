@@ -1,8 +1,7 @@
 package com;
 
-import com.leetcode.LeetCode0801;
 import com.leetcode.LeetCode152;
-import com.leetcode.LeetCode64;
+import com.leetcode.LeetCode300;
 
 /**
  *  * 实例MyTest
@@ -12,8 +11,8 @@ import com.leetcode.LeetCode64;
  */
 public class MyTest {
     public static void main(String[] args) {
-        LeetCode152 leetCode64 = new LeetCode152();
-        int[] nums = {2,3,-2, 4};
-        System.out.println(leetCode64.maxProduct(nums));
+        LeetCode300 leetCode = new LeetCode300();
+        int[] nums = {10,9,2,5,3,7,101,18};
+        System.out.println(leetCode.lengthOfLIS1(nums));
     }
 }
