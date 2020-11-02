@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.leetcode.dynamic;
 
 /**
  *  * 实例LeetCode64

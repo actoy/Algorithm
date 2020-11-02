@@ -1,6 +1,6 @@
 package com;
 
-import com.leetcode.LeetCode1143;
+import com.leetcode.dynamic.LeetCode1143;
 
 /**
  *  * 实例MyTest
