@@ -29,8 +29,10 @@ package com.leetcode.dynamic;
  * 0 <= nums.length <= 100
  * 0 <= nums[i] <= 400
  *
- *  dp[i] 表示偷窃第i个房屋时，最高的金额
+ *  dp[i] 表示前 i 间房屋能偷窃到的最高金额
  *  dp[i] = max(dp[j] + nums[i], nums[i]) i - j > 1
+ *  ||
+ *  dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])
  */
 public class LeetCode198 {
     public int rob(int[] nums) {
@@ -44,5 +46,26 @@ public class LeetCode198 {
             ans = Math.max(ans, dp[i]);
         }
         return ans;
+    }
+
+    /**
+     * O(n)
+     */
+    public int rob1(int[] nums) {
+        int n = nums.length;
+        if (n == 0) {
+            return 0;
+        }
+        int[] dp = new int[nums.length];
+        for (int i = 0; i < n; ++i) {
+            dp[i] = nums[i];
+            if (i >= 2) {
+                dp[i] = Math.max(dp[i - 2] + nums[i], dp[i]);
+            }
+            if (i >= 1) {
+                dp[i] = Math.max(dp[i], dp[i - 1]);
+            }
+        }
+        return dp[n - 1];
     }
 }
