@@ -2,6 +2,7 @@ package com;
 
 import com.leetcode.dynamic.LeetCode1143;
 import com.leetcode.dynamic.LeetCode198;
+import com.leetcode.dynamic.LeetCode354;
 
 /**
  *  * 实例MyTest
@@ -12,8 +13,8 @@ import com.leetcode.dynamic.LeetCode198;
 public class MyTest {
     public static void main(String[] args) {
 //        leetCode1143();
-
-        leetCode198();
+//        leetCode198();
+        leetCode354();
     }
 
 
@@ -29,5 +30,11 @@ public class MyTest {
         int[] nums = {2,7,9,3,1};
 //        int[] nums = {1,2,3,1};
         System.out.println(leetCode.rob(nums));
+    }
+
+    public static void leetCode354() {
+        LeetCode354 leetCode = new LeetCode354();
+        int[][] envelopes = {{4,5}, {4,6}, {6,7}, {2,3}, {1,1}};
+        System.out.println(leetCode.maxEnvelopes(envelopes));
     }
 }
