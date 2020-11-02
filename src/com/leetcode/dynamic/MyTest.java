@@ -1,4 +1,4 @@
-package com;
+package com.leetcode.dynamic;
 
 import com.leetcode.dynamic.LeetCode1143;
 import com.leetcode.dynamic.LeetCode198;
