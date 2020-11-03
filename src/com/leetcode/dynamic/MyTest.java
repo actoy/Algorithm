@@ -17,7 +17,8 @@ public class MyTest {
 //        leetCode198();
 //        leetCode354();
 //        leetCode72();
-        leetCode416();
+//        leetCode416();
+        leetCode494();
     }
 
     public static void leetCode1143() {
@@ -54,5 +55,12 @@ public class MyTest {
         int[] nums = {1,2,5};
 //        int[] nums = {1,5,11,5};
         System.out.println(leetCode416.canPartition(nums));
+    }
+
+    public static void leetCode494() {
+        LeetCode494 leetCode494 = new LeetCode494();
+        int[] nums = {1, 1, 1, 1, 1};
+        int S = 3;
+        System.out.println(leetCode494.findTargetSumWays(nums, S));
     }
 }
