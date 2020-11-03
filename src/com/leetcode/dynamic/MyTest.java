@@ -16,7 +16,8 @@ public class MyTest {
 //        leetCode1143();
 //        leetCode198();
 //        leetCode354();
-        leetCode72();
+//        leetCode72();
+        leetCode416();
     }
 
     public static void leetCode1143() {
@@ -46,5 +47,12 @@ public class MyTest {
         String word1 = "intention";
         String word2 = "execution";
         System.out.println(leetCode.minDistance(word1, word2));
+    }
+
+    public static void leetCode416() {
+        LeetCode416 leetCode416 = new LeetCode416();
+        int[] nums = {1,2,5};
+//        int[] nums = {1,5,11,5};
+        System.out.println(leetCode416.canPartition(nums));
     }
 }
