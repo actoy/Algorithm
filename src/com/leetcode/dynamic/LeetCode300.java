@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.leetcode.dynamic;
 
 import java.util.Arrays;
 
@@ -70,8 +70,10 @@ public class LeetCode300 {
         int[] dp = new int[nums.length];
         int maxL = 0;
         for (int num : nums) {
+            // 如果数组中存在该元素，则会返回该元素在数组中的下标
+            // 如果数组中不存在该元素，则会返回 -插入点 - 1)   插入点：the index of the first element in the range greater than the key
             int index = Arrays.binarySearch(dp, 0, maxL, num);
-            index = index < 0 ? - (index + 1) : index;
+            index = index < 0 ? - index - 1 : index;
             dp[index] = num;
             if (index == maxL) {
                 maxL++;
