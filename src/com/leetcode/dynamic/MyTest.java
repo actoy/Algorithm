@@ -18,7 +18,8 @@ public class MyTest {
 //        leetCode354();
 //        leetCode72();
 //        leetCode416();
-        leetCode494();
+//        leetCode494();
+        leetCode474();
     }
 
     public static void leetCode1143() {
@@ -62,5 +63,13 @@ public class MyTest {
         int[] nums = {1, 1, 1, 1, 1};
         int S = 3;
         System.out.println(leetCode494.findTargetSumWays(nums, S));
+    }
+
+    public static void leetCode474() {
+        LeetCode474 leetCode474 = new LeetCode474();
+        String[] strs = {"10", "0001", "111001", "1", "0"};
+        int m = 5;
+        int n = 3;
+        System.out.println(leetCode474.findMaxForm(strs, m, n));
     }
 }
