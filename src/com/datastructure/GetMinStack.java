@@ -4,7 +4,7 @@ import java.util.Stack;
 
 /**
  *  * 实例GetMinStack
- *  *
+ *  * 实现一个特殊的栈，在实现栈的基本功能的基础上，在实现返回栈中最小元素的操作
  *  * @version 1.0
  *  
  */

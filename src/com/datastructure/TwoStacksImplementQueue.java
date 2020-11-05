@@ -6,7 +6,7 @@ import java.util.Stack;
  *  * 实例TwoStacksImplementQueue
  *  *
  *  * @version 1.0
- *  通过两个栈实现队列
+ *  通过两个栈实现队列，支持队列的基本操作（add、poll、peek）
  */
 public class TwoStacksImplementQueue {
 
