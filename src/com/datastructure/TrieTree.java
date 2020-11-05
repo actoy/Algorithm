@@ -13,11 +13,13 @@ public class TrieTree {
         //以该节点结尾的次数
         public int end;
         public Node1[] nexts;
+        //如果的字符不是字母，Interger存储ascii码，即(int) char[i]
+        //public HashMap<Interger, Node1> nexts;
 
         public Node1() {
             pass = 0;
             end = 0;
-            // a - z 26个英文字母，默认都为null
+            // a - z 26个英文字母及0 - 25，默认都为null
             // nexts[i] = null   i方向的路不存在
             // nexts[i] != null  i方向的路存在
             nexts = new Node1[26];
@@ -85,7 +87,7 @@ public class TrieTree {
             return node.end;
         }
 
-        // 有几个字符串中有pre
+        // 所加入的字符创中，有几个字符串以pre开头
         public int prefixNumber(String pre) {
             if (pre == null) {
                 return 0;
