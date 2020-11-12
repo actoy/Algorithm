@@ -37,6 +37,7 @@ public class RecSize {
      * 左边 小于 flag 的最近的下标位置 y
      * 右边 小于 flag 的最近的下标位置 x
      * area = ( (y - 1) - (x + 1) + 1 ) * flag = (y - x - 1) * flag
+     * 采用单调栈的方式
      */
     public static int maxRecFromBottom(int[] arr) {
         if (arr == null || arr.length == 0) {
